@@ -1,0 +1,19 @@
+<h1>Add A New Car</h1>
+<form ui-sref='AddCar'>
+  <md-input-container>
+  <input type="text" class="form-control" placeholder="Make..." ng-model='vm.NewCar.make'/>
+</md-input-container>
+  <md-input-container>
+  <input type="text" class="form-control" placeholder="Model..." ng-model='vm.NewCar.model'/>
+</md-input-container>
+<md-input-container>
+  <input type="text" class="form-control" placeholder="Year..." ng-model='vm.NewCar.year'/>
+</md-input-container>
+<md-input-container>
+  <input type="text" class="form-control" placeholder="Image..." ng-model='vm.NewCar.pic'/>
+</md-input-container>
+<md-content>
+  <md-button class="md-raised" ng-click='vm.addNewCar()'>Add New Car</md-button>
+    <a  ui-sref='home'>Cancel</a>
+  </md-content>
+</form>
