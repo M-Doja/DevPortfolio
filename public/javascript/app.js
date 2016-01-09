@@ -1,4 +1,4 @@
-angular.module('AngMtr', ['ui.router', 'ngMaterial', 'ngRoute', 'ngAnimate' ]).config(function( $stateProvider, $urlRouterProvider, $routeProvider ){
+angular.module('AngMtr', ['ui.router', 'ngMaterial', 'ngRoute', 'ngAnimate','ui.bootstrap' ]).config(function( $stateProvider, $urlRouterProvider, $routeProvider ){
     $stateProvider.state('Home', {
       url: "/",
       templateUrl:"/templates/home.html",
