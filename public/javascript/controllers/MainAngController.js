@@ -1,4 +1,4 @@
-angular.module('AngMtr').controller('MainAngController', function($http, $state){
+angular.module('AngMtr').controller('MainAngController', function($http, $state,$scope, $mdDialog, $mdMedia){
   var vm = this;
   console.log('The Main Page');
   vm.pageClass = 'page-home';
