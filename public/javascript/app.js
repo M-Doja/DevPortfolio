@@ -9,7 +9,7 @@ angular.module('AngMtr', ['ui.router', 'ngMaterial', 'ngRoute', 'ngAnimate','ui.
       controller: 'AddCarController as vm'
     }).state('Skills', {
         url: "/skills",
-        templateUrl: "/templates/skills.html",
+        templateUrl: "/templates/skills-2.html",
         controller: 'MainAngController as vm'
       }).state('Projects', {
           url: "/projects",

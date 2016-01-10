@@ -6,6 +6,45 @@ angular.module('AngMtr').controller('MainAngController', function($http, $state)
   vm.pageClass = 'page-contact';
   vm.myInterval = 3000;
 
+  vm.Front = false;
+  vm.Back = false;
+  vm.seeFront = false;
+  vm.seeBack = false;
+  vm.goBack = false;
+  vm.startbtn = false;
+  vm.start = true;
+
+  vm.FrontBadge = function() {
+    vm.Front = true;
+    vm.Back = false;
+    vm.seeFront = false;
+    vm.seeBack = true;
+    vm.goBack = true;
+    vm.startBtn = false;
+  }
+  vm.BackBadge = function() {
+    vm.Back = true;
+    vm.Front = false;
+    vm.seeFront = true;
+    vm.seeBack = false;
+    vm.goBack = true;
+    vm.startBtn = false;
+  }
+  vm.startProg = function() {
+    vm.seeFront = true;
+    vm.seeBack = true;
+    vm.start = false;
+  }
+  vm.quit = function() {
+    vm.Front = false;
+    vm.Back = false;
+    vm.seeFront = false;
+    vm.seeBack = false;
+    vm.goBack = false;
+    vm.startbtn = false;
+    vm.start = true;
+  }
+
   vm.slides = [
     {
       name: "HTML",
