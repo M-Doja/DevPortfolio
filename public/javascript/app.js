@@ -1,7 +1,7 @@
 angular.module('AngMtr', ['ui.router', 'ngMaterial', 'ngRoute', 'ngAnimate','ui.bootstrap' ]).config(function( $stateProvider, $urlRouterProvider, $routeProvider ){
     $stateProvider.state('Home', {
       url: "/",
-      templateUrl:"/templates/home.html",
+      templateUrl:"/templates/home-2.html",
       controller: 'MainAngController'
     }).state('AddCar', {
       url: "/add_Car/",
