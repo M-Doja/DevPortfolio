@@ -43,6 +43,14 @@ angular.module('AngMtr').controller('MainAngController', function($http, $state,
     vm.startbtn = false;
     vm.start = true;
   }
+   vm.turnRed = function(){
+  document.getElementById('red').setAttribute("style", "border:5px solid rgba(68,186,250,0.4)");
+
+}
+vm.turnWhite = function(){
+document.getElementById('red').setAttribute("style", "border:5px solid rgba(255,255,255)");
+
+}
 
   vm.slides = [
     {
